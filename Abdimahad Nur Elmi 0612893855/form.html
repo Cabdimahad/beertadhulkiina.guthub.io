@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=Gudbi] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.btn {
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+  padding: 14px 28px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  border-radius: 5px;
+}
+.success {background-color: #04AA6D;} /* Green */
+.success:hover {background-color: #46a049;}
+</style>
+</head>
+<body>
+
+<h2>Ku Soo Biir Iskaashatooyinka Beeraha</h2>
+<p>Waxa kugu xiri karna suuq dibada ah.</p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Magaca</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="Magaca" placeholder="Magaca">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Telefoon</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Telefoon" name="Telefoon" placeholder="Telefoon">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Gobalka</label>
+      </div>
+      <div class="col-75">
+        <select id="Gobalka" name="Gobalka">
+          <option value="Banadir">Banadir</option>
+          <option value="Awdal">Awdal</option>
+          <option value="Bari ">Bari </option>
+          <option value="Togdheer">Togdheer</option>
+          <option value="Sool">Sool</option>
+          <option value="Banadir">Galguduud</option>
+          <option value="Banadir">Hiiraan</option>
+          <option value="Banadir">Gedo</option>
+          <option value="Banadir">Waqooyi Galbeed</option>
+          <option value="Banadir">Shabeelada Dhexe</option>
+          <option value="Banadir">Shabeelada hoose</option>
+          <option value="Banadir">Bay</option>
+          <option value="Banadir">Bakool</option>
+          <option value="Banadir"> Jubada dhexe</option>
+          <option value="Banadir">Sanaag</option>
+          <option value="Banadir">Jubada hoose</option>
+          <option value="Banadir">Nugaal</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Faah-Faahinta wax soo saarka</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="Gudbi" value="Gudbi">
+    </div>
+  </form>
+</div>
+<a href="index.html"><button class="btn success">Home</button></a>
+
+</body>
+</html>
+
+</body>
+</html>
